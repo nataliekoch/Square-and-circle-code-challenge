@@ -40,7 +40,7 @@ $(function() {
     function makeSquares(size){
         var area = Math.ceil(getSquareArea(size));
         // console.log( "Square: Size = " + size + "px Area = " + area + "px");
-        return area;
+        return size;
     }
 
     function getSquareArea(side){
@@ -61,8 +61,8 @@ $(function() {
     }
 
     function drawSquare(square){
-        var x = randomNumber(0, 500);
-        var y = randomNumber(0, 500);
+        var x = randomNumber(0, 1400);
+        var y = randomNumber(0, 1000);
         var hue = randomNumber(20, 70);
         context.strokeStyle = "rgb(255,255,255)";
         context.lineWidth = 4;
